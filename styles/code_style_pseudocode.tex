@@ -1,12 +1,17 @@
-\lstdefinestyle{pseudocode}{
-    language=,
+\lstdefinelanguage{pseudocode}{
+    morekeywords={if, else, add, while, for, return, function, begin, end, input, output, set},
+    sensitive=false,
+    morecomment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    morestring=[b]",
+}
+
+\lstdefinestyle{pseudocodestyle}{
+    language=pseudocode,
     basicstyle=\ttfamily\small,
     keywordstyle=\color{blue},
     stringstyle=\color{green},
     commentstyle=\color{gray},
-    morekeywords={if, else, while, for, return, function, begin, end, input, output},
-    morecomment=[l][\color{gray}]{//},
-    morecomment=[s][\color{gray}]{/*}{*/},
     showstringspaces=false,
     breaklines=true,
     frame=shadowbox,
@@ -14,3 +19,7 @@
     columns=fullflexible,
     xleftmargin=3em
 }
+
+
+% How to use
+% \lstinputlisting[style=pseudocodestyle]{../code_snippets/exercise_1_1.psu}
