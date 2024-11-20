@@ -1,0 +1,34 @@
+\lstdefinelanguage{Kotlin}{
+    keywords={abstract,
+            actual, annotation, as, break, by, class, companion, const, continue, crossinline, data, do, else, enum, expect, false, final,
+            for, fun, if, import, infix, init, inline, inner, interface, internal, is, lateinit, noinline, null, object, open, operator,
+            out, override, package, private, protected, public, reified, return, sealed, set, super, suspend, this, throw, true, try,
+            typealias, val, var, when, where, while},
+    keywordstyle=\color{blue}\bfseries,
+    ndkeywords={@JvmStatic, @JvmOverloads, @Throws},
+    ndkeywordstyle=\color{orange}\bfseries,
+    identifierstyle=\color{black},
+    sensitive=true,
+    comment=[l]{//},
+    morecomment=[s]{/*}{*/},
+    commentstyle=\color{gray}\ttfamily,
+    stringstyle=\color{teal}\ttfamily,
+    morestring=[b]",
+    morestring=[b]'
+}
+
+\lstdefinestyle{kotlinstyle}{
+    language=Kotlin,
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue},
+    stringstyle=\color{teal},
+    commentstyle=\color{gray},
+    morecomment=[l][\color{gray}]{//},
+    morecomment=[s][\color{gray}]{/*}{*/},
+    showstringspaces=false,
+    breaklines=true,
+    frame=shadowbox,
+    rulesepcolor=\color{gray},
+    columns=fullflexible,
+    xleftmargin=3em
+}
